@@ -1,0 +1,323 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "reforging"
+	group: "555B69C1AF8C1C7F"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "tiered:textures/gui/reforge_tab_icon.png"
+		}
+	}
+	id: "7501A35FAE3E34FE"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 2.0d
+			hover: [ ]
+			image: "tiered:textures/gui/reforge_tab_icon.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.35d
+			hover: [ ]
+			image: "tiered:textures/plates/common.png"
+			rotation: 0.0d
+			width: 1.3363636363636364d
+			x: -4.638218923957993E-4d
+			y: 3.2397959183673493d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.35d
+			hover: [ ]
+			image: "tiered:textures/plates/uncommon.png"
+			rotation: 0.0d
+			width: 1.3363636363636364d
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.35d
+			hover: [ ]
+			image: "tiered:textures/plates/rare.png"
+			rotation: 0.0d
+			width: 1.3363636363636364d
+			x: -4.638218923957993E-4d
+			y: 3.790816326530596d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.35d
+			hover: [ ]
+			image: "tiered:textures/plates/uncommon.png"
+			rotation: 0.0d
+			width: 1.3363636363636364d
+			x: 2.5301484230055564d
+			y: 3.2193877551020336d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.35d
+			hover: [ ]
+			image: "tiered:textures/plates/rare.png"
+			rotation: 0.0d
+			width: 1.3363636363636364d
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.35d
+			hover: [ ]
+			image: "tiered:textures/plates/legendary.png"
+			rotation: 0.0d
+			width: 1.3363636363636364d
+			x: 2.509740259740255d
+			y: 4.096938775510203d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.35d
+			hover: [ ]
+			image: "tiered:textures/plates/epic.png"
+			rotation: 0.0d
+			width: 1.3363636363636364d
+			x: 2.509740259740255d
+			y: 3.79081632653061d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.35d
+			hover: [ ]
+			image: "tiered:textures/plates/rare.png"
+			rotation: 0.0d
+			width: 1.3363636363636364d
+			x: 4.99953617810759d
+			y: 3.2193877551020407d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.35d
+			hover: [ ]
+			image: "tiered:textures/plates/epic.png"
+			rotation: 0.0d
+			width: 1.3363636363636364d
+			x: 4.99953617810759d
+			y: 3.5051020408163254d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.35d
+			hover: [ ]
+			image: "tiered:textures/plates/legendary.png"
+			rotation: 0.0d
+			width: 1.3363636363636364d
+			x: 5.019944341372899d
+			y: 3.79081632653061d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.35d
+			hover: [ ]
+			image: "tiered:textures/plates/mythic.png"
+			rotation: 0.0d
+			width: 1.3363636363636364d
+			x: 5.019944341372899d
+			y: 4.0969387755102105d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.35d
+			hover: [ ]
+			image: "tiered:textures/plates/epic.png"
+			rotation: 0.0d
+			width: 1.3363636363636364d
+			x: -4.6382189241001015E-4d
+			y: 4.079846938775518d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"При создании или получении инструментов, доспехов или оружия вы заметите, что они обладают качеством / редкостью."
+				""
+				"Качества варьируются от:"
+				"- Обычные"
+				" - Необычные"
+				" - Редкие"
+				"- Эпические"
+				" - Легендарные"
+				"- Мифический"
+				""
+				"{@pagebreak}"
+				""
+				"Перековка - важная часть вашего собственного прогресса, потому что она позволяет изменить редкость вашего предмета."
+				""
+				"Для этого вы можете найти вкладку \"Перековка\" на наковальне. Вам потребуется:"
+				""
+				"- Основной материал (левая прорезь)"
+				"- Деталь для перековки (Средняя прорезь)"
+				"- Материал для перековки (правый паз)"
+				""
+				""
+				"{@pagebreak}"
+				""
+				"Базовый материал (левая прорезь)"
+				""
+				"Базовый материал напрямую связан с предметом, который вы хотите перековать. Например, для изготовления Священного жезла в качестве основного материала потребуется золотой слиток. Вы можете просмотреть необходимые материалы, наведя курсор на кнопку перековки после того, как поместите свой предмет в среднее поле."
+				""
+				""
+				"{@pagebreak}"
+				""
+				"Базовый элемент (средний слот)"
+				""
+				"Базовый предмет - это предмет, редкость которого вы хотите изменить. Не все предметы можно перековать, только инструменты, оружие и доспехи."
+				""
+				""
+				"{@pagebreak}"
+				""
+				"Перековать материал"
+				""
+				"Этот материал будет определять, до какого качества будет перекован ваш предмет, есть 3 уровня материалов, которые вы можете увидеть в следующих заданиях этой серии."
+				""
+				""
+				"{@pagebreak}"
+				""
+				"Увеличиваем Ваши шансы"
+				""
+				"- Дело не только в измельчении! Вы можете повысить шансы на получение более качественных предметов с помощью своей удачи! Предметы, которые приносят удачу пассивно, зелья удачи, безделушки, вино, получите их все!"
+			]
+			id: "3C95FD1F14D109CF"
+			shape: "hexagon"
+   subtitle: "[Нажмите, чтобы ознакомиться с инструкциями]"
+			tasks: [{
+				id: "71FAC91280FBBF9C"
+				item: "minecraft:anvil"
+    title: "Создание наковальни"
+				type: "item"
+			}]
+   title: "Первые шаги: наковальня"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C95FD1F14D109CF"]
+			description: [
+				""
+				"Кусок известняка - это первый уровень материалов для перековки."
+				""
+				"Его можно найти в Верхнем мире, добыв известняковый блок (4 штуки) или диоритовый блок (1 штука)"
+				""
+				"Его можно перековать в следующие качества:"
+				"- Обычное"
+				"- Необычное"
+				"- Редкое"
+				"- Эпическое"
+			]
+			id: "4D3F0D8217067D24"
+			shape: "diamond"
+   subtitle: "[Нажмите, чтобы ознакомиться с инструкциями]"
+			tasks: [{
+				id: "4593A7256861742B"
+				item: "tiered:limestone_chunk"
+				type: "item"
+			}]
+   title: "Уровень I: известняк"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4D3F0D8217067D24"]
+			description: [
+				""
+				"Кусок пирита - это второй по значимости материал для перековки."
+				""
+				"Его можно найти в Нижнем мире, получить, создав его из 4 кусков пиритовой пыли (для 1 куска) или переплавив блок древних обломков (для 4 кусков)"
+				""
+				"* Пиритовую пыль можно получить, добывая пиритовую руду в Нижнем мире"
+				""
+				"Она может быть перекована в следующие качества:"
+				"- Необычная"
+				"- Редкая"
+				"- Эпическая"
+				"- Легендарная"
+			]
+			id: "31388834855FB88E"
+			shape: "diamond"
+   subtitle: "[Нажмите, чтобы ознакомиться с инструкциями]"
+			tasks: [{
+				id: "23DAEBDBFD05AB7B"
+				item: "tiered:pyrite_chunk"
+				type: "item"
+			}]
+   title: "Уровень II: пирит"
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["31388834855FB88E"]
+			description: [
+				""
+				"Кусок галенита - это третий по счету и последний материал для перековки."
+				""
+				"Он находится в Краю, его можно получить, создав его из 2 кусков галенита и 2 плодов хора (для 1 куска)."
+				"В качестве альтернативы вместо галенита можно использовать камень Края."
+				""
+				"* Галенит можно найти в глубоких пещерах Верхнего мира."
+				""
+				"Его можно перековать в следующие качества:"
+				"- Редкое"
+				"- Эпическое"
+				"- Легендарное"
+				"- Мифическое"
+			]
+			id: "2DE7359A85169236"
+			shape: "diamond"
+   subtitle: "[Нажмите, чтобы ознакомиться с инструкциями]"
+			tasks: [{
+				id: "7C188E7D00623268"
+				item: "tiered:galena_chunk"
+				type: "item"
+			}]
+   title: "Уровень III: галенит"
+			x: 5.0d
+			y: 2.5d
+		}
+	]
+ title: "Информация: перековка"
+}

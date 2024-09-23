@@ -1,0 +1,2756 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tech_reborn"
+	group: "49D52BD6447C5CC0"
+	icon: "techreborn:uu_matter"
+	id: "163D00BF8D9779C4"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4C244A59E076A502"
+			rewards: [{
+				id: "549B6A7BC52F7B2E"
+				type: "xp"
+				xp: 25
+			}]
+   subtitle: "Добро пожаловать в Tech Reborn! Технологический мод, который предоставляет возможности для выработки энергии, ее хранения, хранения больших объемов предметов, инструментов и создания материалов из энергии и отходов."
+			tasks: [{
+				id: "2A8A14E3AE26CD95"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4C244A59E076A502"]
+			id: "0FECC424EA9A9500"
+			rewards: [
+				{
+					id: "7CAE99715D437227"
+					item: "techreborn:rubber_sapling"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "23D03C47BAD3F92E"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					id: "53C696F638ABEECF"
+					type: "xp"
+					xp: 25
+				}
+			]
+   subtitle: "Пришло время заняться добычей полезных ископаемых, вот вам саженец, который поможет вам начать. \\n\\n Щелкнув правой кнопкой мыши по оранжевым пятнам на каучуковом дереве, вы сможете добыть сок, который можно переплавить в каучук. "
+			tasks: [{
+				id: "34D264E11AE94E6E"
+				item: {
+					Count: 1b
+					id: "techreborn:treetap"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4C244A59E076A502"]
+			id: "4B8D34860B127B5C"
+   subtitle: "Благодаря своим улучшенным свойствам очищенное железо служит основой для создания передовых устройств и сложных схем."
+			tasks: [{
+				id: "1C5A76594ECF949E"
+				item: "techreborn:refined_iron_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"0FECC424EA9A9500"
+				"4B8D34860B127B5C"
+			]
+			id: "0B606A84A47E6984"
+			rewards: [{
+				id: "7155552E71BDD134"
+				type: "xp"
+				xp: 100
+			}]
+			size: 1.5d
+   subtitle: "Это основные строительные блоки Tech Reborn на начальном этапе игры."
+			tasks: [
+				{
+					id: "5D724882A1DB66C7"
+					item: "techreborn:electronic_circuit"
+					type: "item"
+				}
+				{
+					id: "5318E64733931D32"
+					item: "techreborn:basic_machine_frame"
+					type: "item"
+				}
+			]
+   title: "Основные компоненты"
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B606A84A47E6984"]
+			id: "321F9684523A91C8"
+			rewards: [
+				{
+					count: 6
+					id: "00CAF829AF3D6EB8"
+					item: "techreborn:insulated_copper_cable"
+					type: "item"
+				}
+				{
+					id: "2BDF6C690B03E6E0"
+					type: "xp"
+					xp: 25
+				}
+			]
+   subtitle: "Модернизированная версия печи, которая работает на энергии, а не на угле"
+			tasks: [{
+				id: "51B12088B713C89C"
+				item: "techreborn:electric_furnace"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1DD5BD434117A8DE"]
+			id: "7C20055475FCD3E8"
+			rewards: [{
+				id: "690F2F8FBD84705C"
+				type: "xp"
+				xp: 50
+			}]
+   subtitle: "Используя две железные печи и немного очищенного железа, вы можете создать примитивный плавильный агрегат для производства новых материалов"
+			tasks: [{
+				id: "6679518F4EA446D9"
+				item: "techreborn:iron_alloy_furnace"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0B606A84A47E6984"]
+			id: "0530526EE1A4901E"
+			rewards: [{
+				id: "7AE1271713CBDC76"
+				type: "xp"
+				xp: 50
+			}]
+   subtitle: "Модернизированная версия плавильного агрегата для производства железных сплавов, которая работает на энергии, а не на угле"
+			tasks: [{
+				id: "5E3E493E895A8172"
+				item: "techreborn:alloy_smelter"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0B606A84A47E6984"]
+			id: "6E8C527CBF07F476"
+			rewards: [
+				{
+					count: 16
+					id: "6C2733BFFF4408A8"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "4F188AB8F83830FC"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "6F78F50B101FEB15"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "652C8E2B06F11F7A"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [{
+				id: "71F14AE612B0B094"
+				item: "techreborn:grinder"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0B606A84A47E6984"]
+			id: "184C7C8DE8D3C466"
+			rewards: [{
+				id: "0018F185E344814B"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Этот механический шедевр, обладающий неумолимой силой и точностью, берет сырье и подвергает его огромному давлению. \\n\\nЭта машина будет очень полезна в вашем путешествии по Tech Reborn"
+			tasks: [{
+				id: "07F8124CD1DA92EA"
+				item: "techreborn:compressor"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0B606A84A47E6984"]
+			id: "1494D4D023A96CB4"
+			rewards: [
+				{
+					count: 4
+					id: "54FF71126B0AB965"
+					item: "techreborn:sap"
+					type: "item"
+				}
+				{
+					id: "754CA89815B79BAC"
+					type: "xp"
+					xp: 100
+				}
+			]
+   subtitle: "Машина, которая позволяет более эффективно использовать сырье, особенно полезна для производства резины, которая вам понадобится"
+			tasks: [{
+				id: "5A06A00223C86F71"
+				item: "techreborn:extractor"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B606A84A47E6984"]
+			id: "2A0E4313C171CC6C"
+			rewards: [{
+				count: 32
+				id: "644E1F0CA62D2ACF"
+				item: "techreborn:scrap"
+				type: "item"
+			}]
+   subtitle: "Рециклер — это идеальное устройство для избавления от ненужных предметов, оно принимает любой предмет и просто превращает его в металлолом, используя энергию"
+			tasks: [{
+				id: "2AA8BB537CAED9E3"
+				item: "techreborn:recycler"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["0B606A84A47E6984"]
+			id: "580F229A31EACBEB"
+			optional: true
+			rewards: [
+				{
+					count: 12
+					id: "4D61196FC6C934E3"
+					item: "techreborn:hv_cable"
+					type: "item"
+				}
+				{
+					id: "0137AE2CC473A208"
+					type: "xp"
+					xp: 50
+				}
+			]
+   subtitle: "Базовая машина, которая превращает слитки в проволоку, что позволяет более эффективно использовать материал"
+			tasks: [{
+				id: "380703B271FC9EC6"
+				item: "techreborn:wire_mill"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4B8D34860B127B5C"]
+			description: ["Позволяет переплавлять 12,5 единиц сырья на один кусок угля"]
+			id: "1DD5BD434117A8DE"
+			rewards: [
+				{
+					count: 8
+					id: "6D1E51ECDC221E10"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "2B02B0326D4E1E49"
+					type: "xp"
+					xp: 25
+				}
+			]
+   subtitle: "Это значительное усовершенствование по сравнению с традиционной печью, обеспечивающее возможность простой автоматизации и более экономичную плавку"
+			tasks: [{
+				id: "3684F1DBE604A0D2"
+				item: "techreborn:iron_furnace"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"6E8C527CBF07F476"
+				"184C7C8DE8D3C466"
+			]
+			icon: "techreborn:carbon_plate"
+			id: "1D20EBA7D1490E46"
+			rewards: [{
+				id: "6712D49AB5CF2A0C"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [
+				{
+					count: 16L
+					id: "3562F6023F1E61D6"
+					item: "techreborn:coal_dust"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "63A4CBFCA149C1BD"
+					item: "techreborn:carbon_fiber"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3E86AE4CD69F97CD"
+					item: "techreborn:carbon_mesh"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3DA4FFA735E199D7"
+					item: "techreborn:carbon_plate"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["184C7C8DE8D3C466"]
+			icon: "techreborn:advanced_alloy_plate"
+			id: "2B0A6AFE90C8D59C"
+			rewards: [{
+				id: "4D026D395893986F"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [
+				{
+					count: 2L
+					id: "00B83AF65A092D15"
+					item: "techreborn:mixed_metal_ingot"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "62D4A655B9E2519E"
+					item: "techreborn:advanced_alloy_ingot"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "451A35D74A713F78"
+					item: "techreborn:advanced_alloy_plate"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"2B0A6AFE90C8D59C"
+				"1D20EBA7D1490E46"
+			]
+			id: "1293EEC801BC50DB"
+			rewards: [
+				{
+					id: "6DA9EA135FBF422C"
+					item: "techreborn:advanced_machine_frame"
+					type: "item"
+				}
+				{
+					id: "30B5E0E95E93A5CA"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+   subtitle: "Поздравляем, это начало второй части игры \"
+			tasks: [
+				{
+					id: "2D038516235AF2D5"
+					item: "techreborn:advanced_machine_frame"
+					type: "item"
+				}
+				{
+					id: "13255A86D5736AD0"
+					item: "techreborn:advanced_circuit"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["1293EEC801BC50DB"]
+			id: "54636677E54B866A"
+			rewards: [
+				{
+					id: "4F78C5834766F014"
+					item: "techreborn:overclocker_upgrade"
+					type: "item"
+				}
+				{
+					id: "419987A4AAB85B49"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.5d
+   subtitle: "Используя силу центробежных сил, промышленная центрифуга позволяет извлекать несколько новых ресурсов"
+			tasks: [{
+				id: "4C6928017A7FB3DD"
+				item: "techreborn:industrial_centrifuge"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["1293EEC801BC50DB"]
+			icon: "techreborn:industrial_blast_furnace"
+			id: "2D78300F936E7A0C"
+			tasks: [
+				{
+					id: "1226E757D14EDD3C"
+					item: "techreborn:industrial_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 34L
+					id: "7002AE808B1E5790"
+					item: "techreborn:basic_machine_casing"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1EE7521BEE92A9BD"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["1293EEC801BC50DB"]
+			icon: "techreborn:industrial_grinder"
+			id: "74A405518E3CD8F9"
+			tasks: [
+				{
+					id: "4CD8E57371485BD9"
+					item: "techreborn:industrial_grinder"
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "6C338202D371D2D1"
+					item: "techreborn:basic_machine_casing"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "37EEFDAE19491ED9"
+					item: "techreborn:advanced_machine_casing"
+					type: "item"
+				}
+				{
+					id: "0065BE8304BA85CA"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["1293EEC801BC50DB"]
+			id: "4E77F0C6FFEC6105"
+			tasks: [{
+				id: "72224FA916E2AAF7"
+				item: "techreborn:industrial_electrolyzer"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["4E77F0C6FFEC6105"]
+			dependency_requirement: "one_completed"
+			id: "798A2936F8F101CE"
+			rewards: [
+				{
+					count: 8
+					id: "4810F46DFEC9FF9F"
+					item: "techreborn:clay_dust"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "32CB967E54E34ADF"
+					item: "techreborn:bauxite_ore"
+					type: "item"
+				}
+			]
+   subtitle: "Алюминий — это компонент, который входит в состав многих вещей вокруг вас. Однако наиболее доступными являются глина и боксит.\\n\\n Для получения алюминия рекомендуется проводить электролиз глинистой пыли / бокситовой пыли или промышленное измельчение бокситовой руды"
+			tasks: [{
+				id: "02A3EB332C1AB3EA"
+				item: "techreborn:aluminum_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["7C20055475FCD3E8"]
+			id: "04F3AC097C350502"
+			rewards: [{
+				id: "3905E75A63425523"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Железо, усиленное никелем, создает сплав, который по прочности превосходит сумму составляющих его частей. \\n\\n Может использоваться для изготовления слитков из смешанных металлов или в качестве пластин для создания генераторов среднего уровня."
+			tasks: [{
+				id: "3C5858080E818E4B"
+				item: "techreborn:invar_ingot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7C20055475FCD3E8"]
+			id: "0E82BECAC4A8AEAC"
+			rewards: [{
+				id: "0D27D050609A6F83"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Простая, элегантная смесь золота и серебра."
+			tasks: [{
+				id: "3A9DB76F105E8215"
+				item: "techreborn:electrum_ingot"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7C20055475FCD3E8"]
+			id: "12D83CB0796A933C"
+			rewards: [{
+				id: "1A3B26DDD7A2744D"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Довольно полезный сплав, в основном для создания слитков из смешанных сплавов."
+			tasks: [{
+				id: "5ABBEECED68127B8"
+				item: "techreborn:bronze_ingot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2D78300F936E7A0C"]
+			id: "6C9B0FDA7EE4B25D"
+			rewards: [{
+				id: "7A20330E38BA86DE"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Изготовлен в промышленной доменной печи."
+			tasks: [{
+				id: "11F128742A956CB1"
+				item: "techreborn:aluminum_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["0B606A84A47E6984"]
+			id: "092DCB6155BE06E0"
+			rewards: [{
+				id: "1E2EEAF93F7B7190"
+				type: "xp"
+				xp: 25
+			}]
+   subtitle: "Раскройте истинный потенциал своих устройств с помощью обновления Overclocker — замечательной инновации, которая сокращает время ожидания на 25% при каждом обновлении"
+			tasks: [{
+				id: "3812CF7D67D80458"
+				item: "techreborn:overclocker_upgrade"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B606A84A47E6984"]
+			icon: "techreborn:transformer_upgrade"
+			id: "65503022D5B1F4E8"
+			rewards: [{
+				id: "7365B40CFA455252"
+				type: "xp"
+				xp: 25
+			}]
+   subtitle: "Остатки былых времен, трансформаторы — это пережиток прошлого"
+			tasks: [{
+				id: "2180E191F6508826"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B606A84A47E6984"]
+			id: "35C85EA3FCAA00F7"
+			rewards: [{
+				id: "6F7E927090141567"
+				type: "xp"
+				xp: 25
+			}]
+   subtitle: "Довольно скромное обновление, которое увеличивает количество энергии, которую могут накапливать ваши устройства. Полезно, когда использование внешнего буфера энергии невозможно."
+			tasks: [{
+				id: "24742AD588296FAE"
+				item: "techreborn:energy_storage_upgrade"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B606A84A47E6984"]
+			id: "0AEB03456EB0F57B"
+			rewards: [{
+				id: "6EB6DEDAB55765BF"
+				type: "xp"
+				xp: 25
+			}]
+   subtitle: "Устали от этого скулящего звука, который издают ваши устройства во время работы? У меня есть для вас кое-что, установите глушитель на свое устройство, и я уверяю вас... \\n\\n \"
+			tasks: [{
+				id: "23342907C2834700"
+				item: "techreborn:muffler_upgrade"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1293EEC801BC50DB"]
+			icon: "techreborn:vacuum_freezer"
+			id: "269B6488664B348B"
+			rewards: [
+				{
+					count: 8
+					id: "71A6ABC37A2E1030"
+					item: "croptopia:kale_smoothie"
+					type: "item"
+				}
+				{
+					id: "1CD6B59FD74D711E"
+					type: "xp"
+					xp: 100
+				}
+			]
+   subtitle: "Ну, это сработало. Но теперь оно не остывает. Для этого нам понадобится машина."
+			tasks: [
+				{
+					id: "70D989DE9F7D5219"
+					item: "techreborn:vacuum_freezer"
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "3708D32F7B370C08"
+					item: "techreborn:advanced_machine_casing"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "33383711E431B7DC"
+					item: "techreborn:industrial_machine_casing"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["2D78300F936E7A0C"]
+			id: "295E413CB213B957"
+			rewards: [{
+				id: "4609F3E5198F6C2D"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Сталь и вольфрам обычно не поддаются плавлению, но, возможно, промышленная доменная печь сможет нагреться до нужной температуры?"
+			tasks: [{
+				id: "6D9CA529DA493EA3"
+				item: "techreborn:hot_tungstensteel_ingot"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 21.0d
+		}
+		{
+			dependencies: [
+				"269B6488664B348B"
+				"295E413CB213B957"
+			]
+			icon: "techreborn:tungstensteel_plate"
+			id: "4B1A6E2F469AAE0B"
+			rewards: [{
+				id: "0670C327D57DEC90"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Похоже, что вакуумное замораживание работает, теперь нужно превратить его во что-то более полезное."
+			tasks: [
+				{
+					id: "02E0F3E0C75AC21D"
+					item: "techreborn:tungstensteel_ingot"
+					type: "item"
+				}
+				{
+					id: "6C9E879EB44A795C"
+					item: "techreborn:tungstensteel_plate"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["4C244A59E076A502"]
+			hide_dependency_lines: true
+			id: "1693870F4F722022"
+			rewards: [
+				{
+					id: "11B458707ABFBAB9"
+					item: "minecraft:coal_block"
+					type: "item"
+				}
+				{
+					id: "650C661A3F147C46"
+					type: "xp"
+					xp: 25
+				}
+			]
+   subtitle: "Самая простая форма производства энергии, потребляет любой горючий материал и превращает его в энергию."
+			tasks: [{
+				id: "4552BEF1B44EFC04"
+				item: "techreborn:solid_fuel_generator"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1693870F4F722022"]
+			id: "51A9F4178437FD07"
+			rewards: [{
+				id: "1613A8E14E54B31A"
+				type: "xp"
+				xp: 50
+			}]
+   subtitle: "Генерирует 16 единиц энергии в час за счет потребления лавы."
+			tasks: [{
+				id: "165EF8ADBDF06081"
+				item: "techreborn:thermal_generator"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1693870F4F722022"]
+			id: "04B3A406760469E3"
+			rewards: [{
+				id: "7F8E4B51EDFE4EA3"
+				type: "xp"
+				xp: 50
+			}]
+   subtitle: "Обеспечивает энергией от солнца, генерирует от 0 до 3 единиц энергии в час в зависимости от времени суток."
+			tasks: [{
+				id: "4A0FE367C19C4AAB"
+				item: "techreborn:basic_solar_panel"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1693870F4F722022"]
+			id: "431ED7C239E9EAAD"
+			rewards: [{
+				id: "1B0706006E67E948"
+				type: "xp"
+				xp: 50
+			}]
+   subtitle: "Обеспечивает энергией от солнца, генерирует от 4 до 24 единиц энергии в час в зависимости от времени суток."
+			tasks: [{
+				id: "2091EDF29176543C"
+				item: "techreborn:industrial_solar_panel"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1693870F4F722022"]
+			id: "1FFD224FD482EF52"
+			rewards: [{
+				id: "06008E4BD97EB4A1"
+				type: "xp"
+				xp: 50
+			}]
+   subtitle: "Обеспечивает энергией от солнца, генерирует от 0 до 12 единиц энергии в час в зависимости от времени суток."
+			tasks: [{
+				id: "16B83920347F3C2E"
+				item: "techreborn:advanced_solar_panel"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1693870F4F722022"]
+			id: "5D007FE75F9D49CD"
+			rewards: [{
+				id: "7DC2FE3B0460E59C"
+				type: "xp"
+				xp: 50
+			}]
+   subtitle: "Обеспечивает энергией от солнца, генерирует от 8 до 48 единиц энергии в зависимости от времени суток."
+			tasks: [{
+				id: "45F8A9240ED24AC2"
+				item: "techreborn:ultimate_solar_panel"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1693870F4F722022"]
+			id: "3D1AAE6D95AE2CD1"
+			rewards: [{
+				id: "350F93D6450616AE"
+				type: "xp"
+				xp: 50
+			}]
+   subtitle: "Обеспечивает энергией от солнца, генерирует от 32 до 512 единиц энергии в зависимости от времени суток."
+			tasks: [{
+				id: "5F8EC4A4168E505D"
+				item: "techreborn:quantum_solar_panel"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1693870F4F722022"]
+			id: "155DDD4B9922FA5E"
+			rewards: [{
+				id: "380683C595DC06CE"
+				type: "xp"
+				xp: 50
+			}]
+   subtitle: "Генерирует 20 единиц энергии при использовании дизельного топлива или нитродизеля."
+			tasks: [{
+				id: "4CE7501F33BC237A"
+				item: "techreborn:diesel_generator"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1693870F4F722022"]
+			id: "7312551AD8A0A859"
+			rewards: [{
+				id: "1CF785E7E3A1265B"
+				type: "xp"
+				xp: 50
+			}]
+   subtitle: "Генерирует 500 единиц энергии при использовании гелий-плазменного топлива."
+			tasks: [{
+				id: "520114AF319D3149"
+				item: "techreborn:plasma_generator"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1693870F4F722022"]
+			id: "45A0A55BF2CA1F2B"
+			rewards: [{
+				id: "0EA293B3691B5943"
+				type: "xp"
+				xp: 50
+			}]
+   subtitle: "Генерирует 0,1 единицы энергии на каждую сторону, соприкасающуюся с водой."
+			tasks: [{
+				id: "1BBBC06411C8F9A5"
+				item: "techreborn:water_mill"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1693870F4F722022"]
+			id: "02382BFB96614F9C"
+			rewards: [{
+				id: "62577B37711241DE"
+				type: "xp"
+				xp: 50
+			}]
+   subtitle: "Генерирует 2 единицы энергии (2,5 единицы энергии во время грозы), должен быть размещен выше уровня y: 64."
+			tasks: [{
+				id: "542F567D4B904633"
+				item: "techreborn:wind_mill"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1693870F4F722022"]
+			id: "58AAB586CA993879"
+			rewards: [{
+				id: "2947DA3D896CBA29"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "3CE21F50680EA782"
+				item: "techreborn:semi_fluid_generator"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["54636677E54B866A"]
+			id: "70132A3A1D58A70B"
+			rewards: [{
+				id: "347AD0396E500841"
+				type: "xp"
+				xp: 50
+			}]
+   subtitle: "Для поздней игры вам понадобится много вольфрама. Один из способов его получения — центрифугирование лавы или пыли из эндер-камня."
+			tasks: [{
+				id: "589E6DF494C9899A"
+				item: "techreborn:tungsten_small_dust"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 17.5d
+		}
+		{
+			icon: "techreborn:tungsten_ore"
+			id: "2C0BD10615F7ECCA"
+			rewards: [
+				{
+					id: "717D232CEE2DF665"
+					item: "techreborn:tungsten_ore"
+					type: "item"
+				}
+				{
+					id: "4480A4526BFDF83A"
+					type: "xp"
+					xp: 100
+				}
+			]
+   subtitle: "[\"\",\"Можно найти в \",{\"text\":\"The End\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"45D9C9CD7B2568A0\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[]}},\".\"]"
+			tasks: [{
+				id: "6A1248D8D9D0D60A"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "techreborn:tungsten_ore"
+							}
+							{
+								Count: 1b
+								id: "oreclumps:raw_tungsten"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+   title: "Вольфрамовая руда"
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"111C5864D82F7986"
+				"0B606A84A47E6984"
+			]
+			id: "65E79EAA20C0778C"
+			optional: true
+			rewards: [{
+				id: "1FF224776EB64660"
+				type: "xp"
+				xp: 200
+			}]
+   subtitle: "\"
+			tasks: [{
+				id: "291D48EFB3135E0D"
+				item: "techreborn:scrapboxinator"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["2A0E4313C171CC6C"]
+			id: "111C5864D82F7986"
+			optional: true
+			rewards: [{
+				count: 8
+				id: "1F8E6EBAC4A39984"
+				item: "techreborn:scrap_box"
+				type: "item"
+			}]
+   subtitle: "Взяв 9 недавно найденных вами осколков, вы сможете создать коробку для сбора мусора, которая, по сути, является коробкой для добычи, содержащей случайные предметы. Наконец-то вы нашли применение всем этим лишним камням, которые у вас валяются без дела."
+			tasks: [{
+				id: "4EDB2AB05D681D47"
+				item: "techreborn:scrap_box"
+				type: "item"
+			}]
+   title: "Кто сказал, что переработка мусора не может быть увлекательной?"
+			x: -1.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0B606A84A47E6984"]
+			id: "3B94C5DE174F2129"
+			rewards: [
+				{
+					id: "18E20C8A42EE6DCF"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "128AF7A40220E9A7"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
+   subtitle: "Ах, химический реактор. Это облегчает смешивание множества химических веществ, позволяет превращать гнилую плоть в кожу и, что немаловажно, изготавливать синтетический красный камень."
+			tasks: [{
+				id: "61A585395D8A4B9D"
+				item: "techreborn:chemical_reactor"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["1293EEC801BC50DB"]
+			icon: "techreborn:implosion_compressor"
+			id: "021AE38A81AD9FAC"
+			rewards: [
+				{
+					count: 16
+					id: "64040F09E5A3BCB7"
+					item: "minecraft:tnt"
+					type: "item"
+				}
+				{
+					id: "0E974A2C5E8B0C14"
+					type: "xp"
+					xp: 100
+				}
+			]
+   subtitle: "Из-за прочности сплава иридия вашего компрессора будет недостаточно для изготовления пластин. Может быть, взрывы необходимы? Конечно, контролируемые взрывы."
+			tasks: [
+				{
+					id: "3A1046333BFC28A7"
+					item: "techreborn:implosion_compressor"
+					type: "item"
+				}
+				{
+					count: 26L
+					id: "615F78673F0F5B4A"
+					item: "techreborn:advanced_machine_casing"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["0B606A84A47E6984"]
+			id: "7B86674432D514BF"
+			optional: true
+			rewards: [
+				{
+					id: "285FFEEE947C7397"
+					item: "minecraft:end_rod"
+					type: "item"
+				}
+				{
+					id: "0758D6620583173E"
+					type: "xp"
+					xp: 200
+				}
+			]
+   subtitle: "Если у вас не хватает ресурсов, сейчас самое время приобрести сборочный станок, так как он позволяет изготавливать некоторые альтернативные схемы, которые снижают затраты. \\n\\nОдин конкретный рецепт, который может вас заинтересовать, - это Элита, но как вы собираетесь получить эти стержни?"
+			tasks: [{
+				id: "78C15C1B7EE47356"
+				item: "techreborn:assembly_machine"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["0B606A84A47E6984"]
+			icon: "techreborn:industrial_sawmill"
+			id: "40E8EBF7F584D035"
+			optional: true
+			rewards: [
+				{
+					count: 16
+					id: "577E0B7D6DCC3A4A"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					id: "0604545F2866F0C9"
+					type: "xp"
+					xp: 125
+				}
+			]
+   subtitle: "Для всех ваших нужд в распиловке."
+			tasks: [
+				{
+					id: "42F4868A18350546"
+					item: "techreborn:industrial_sawmill"
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "3EF3F0E1C9E6A79A"
+					item: "techreborn:basic_machine_casing"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "63B51FC12E117C0B"
+					item: "techreborn:advanced_machine_casing"
+					type: "item"
+				}
+				{
+					id: "5148D4CFF61103D7"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0B606A84A47E6984"]
+			id: "1C6065E1743B9C52"
+			rewards: [
+				{
+					id: "637208C8ED2F0392"
+					item: "techreborn:cupronickel_heating_coil"
+					type: "item"
+				}
+				{
+					id: "313C45BF7E92EF5C"
+					type: "xp"
+					xp: 100
+				}
+			]
+   subtitle: "Абсолютно необходим для изготовления медно-никелевых колец и нихромовых нагревательных спиралей"
+			tasks: [{
+				id: "61EB29D2429158AB"
+				item: "techreborn:rolling_machine"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1693870F4F722022"]
+			id: "5531416A72A727DD"
+			rewards: [{
+				id: "3EF3E3AC8E313DE4"
+				type: "xp"
+				xp: 50
+			}]
+   subtitle: "Генерирует 16 единиц энергии при использовании метана или водорода"
+			tasks: [{
+				id: "5F7EAFB0DA50BA3D"
+				item: "techreborn:gas_turbine"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"35B27CC7FEF8F5A2"
+				"57706419A89EA464"
+			]
+			id: "5C320307CEC5B785"
+			rewards: [{
+				id: "7D4B408C552F1B4E"
+				type: "xp"
+				xp: 250
+			}]
+			size: 1.5d
+   subtitle: "Теперь мы в конце игры!"
+			tasks: [{
+				id: "47F1A5E80CBC5BDB"
+				item: "techreborn:industrial_machine_frame"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 26.0d
+		}
+		{
+			dependencies: [
+				"17F560332DD3CF3D"
+				"1975556CF28F04D1"
+				"5C320307CEC5B785"
+			]
+			id: "5158324CF1B1D4B6"
+			rewards: [
+				{
+					count: 120
+					id: "4D1D147C3C17F7EF"
+					item: "techreborn:scrap"
+					type: "item"
+				}
+				{
+					id: "036775AF46B6BB54"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 1.5d
+   subtitle: "Требуется 30 единиц энергии и 30 единиц лома на единицу материи"
+			tasks: [{
+				id: "1BBA400588034739"
+				item: "techreborn:matter_fabricator"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 28.5d
+		}
+		{
+			dependencies: ["5158324CF1B1D4B6"]
+			id: "6270F1A6D37F24CD"
+			rewards: [
+				{
+					count: 8
+					id: "364A5EA8244C92CC"
+					item: "techreborn:uu_matter"
+					type: "item"
+				}
+				{
+					id: "3615BE92ED69050A"
+					type: "xp"
+					xp: 100
+				}
+			]
+   subtitle: "Это податливое вещество позволяет создавать множество материалов, и кажется, что оно было создано только из лома и энергии"
+			tasks: [{
+				id: "0BBF4D7C215F638C"
+				item: "techreborn:uu_matter"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 28.5d
+		}
+		{
+			dependencies: ["6FB5FA2FACF2C776"]
+			id: "1975556CF28F04D1"
+			rewards: [{
+				id: "67A45204F840430F"
+				type: "xp"
+				xp: 500
+			}]
+   subtitle: "Чип, оптимизированный для передачи энергии, позволяющий создавать машины с более высоким энергопотреблением"
+			tasks: [{
+				id: "3ECBC4143FC5A363"
+				item: "techreborn:energy_flow_chip"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 28.5d
+		}
+		{
+			dependencies: [
+				"1ACA7BC9FA7FE69D"
+				"1C0835381B14085C"
+			]
+			id: "6FB5FA2FACF2C776"
+			rewards: [{
+				count: 2
+				id: "2B9168ECE7151CE9"
+				item: "techreborn:industrial_circuit"
+				type: "item"
+			}]
+   subtitle: "Улучшенный энергетический кристалл, позволяющий накапливать еще больше энергии"
+			tasks: [{
+				id: "45E5F8FC569EE84B"
+				item: "techreborn:lapotron_crystal"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 23.5d
+		}
+		{
+			dependencies: ["6FB5FA2FACF2C776"]
+			id: "17F560332DD3CF3D"
+			rewards: [
+				{
+					count: 4
+					id: "05D623F419071631"
+					item: "techreborn:raw_iridium"
+					type: "item"
+				}
+				{
+					id: "7453EE95C442F24E"
+					type: "xp"
+					xp: 100
+				}
+			]
+   subtitle: "Содержит значительно больше энергии, чем обычная батарея"
+			tasks: [{
+				id: "5F242A10C40929D6"
+				item: "techreborn:lapotronic_orb"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 26.0d
+		}
+		{
+			dependencies: [
+				"0EA4DBE7B695EF01"
+				"4D85BA63BD54984A"
+				"57026EAE5D560F4F"
+				"56FAF66CFEE8E937"
+			]
+			icon: "techreborn:fusion_control_computer"
+			id: "2567CBAC31932921"
+			rewards: [{
+				id: "25521FA4B1BC8EB1"
+				type: "xp"
+				xp: 10000
+			}]
+			size: 1.5d
+   subtitle: "НЕОГРАНИЧЕННАЯ МОЩНОСТЬ! Или, по крайней мере, достаточно близкая к этому. \\n\\nС помощью термоядерного реактора вы можете создать 16 кЕ/т или, возможно, получить еще немного этого труднодоступного иридия."
+			tasks: [
+				{
+					id: "51219F8329031846"
+					item: "techreborn:fusion_control_computer"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "754F0211C1C0E7C1"
+					item: "techreborn:fusion_coil"
+					type: "item"
+				}
+			]
+			x: -11.5d
+			y: 21.25d
+		}
+		{
+			dependencies: ["7B86674432D514BF"]
+			id: "413301782F770B3C"
+			rewards: [{
+				id: "6C2EF701F589D509"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Высший уровень схемы, много таких схем требуется для лапотронов. Они также полезны для удешевления производства микросхем в сборочном цехе."
+			tasks: [{
+				id: "0DBB0836120AC951"
+				item: "techreborn:industrial_circuit"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["165D860455970922"]
+			id: "1ACA7BC9FA7FE69D"
+			rewards: [
+				{
+					count: 16
+					id: "74896DDB6D03AB80"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "4168B11729B6DC63"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				id: "01A6D88A5F6AD03F"
+				item: "techreborn:energy_crystal"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 21.5d
+		}
+		{
+			dependencies: ["54636677E54B866A"]
+			icon: "techreborn:lazurite_dust"
+			id: "1C0835381B14085C"
+			rewards: [{
+				id: "7A08AD74BB2E804D"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "С помощью центрифугирования лазурита вы можете извлечь лазурит."
+			tasks: [{
+				id: "0EB8463992259B6E"
+				item: "techreborn:lazurite_dust"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["2D78300F936E7A0C"]
+			id: "768D5C3D77FF6E73"
+			rewards: [{
+				id: "0B7555C7BE1F0351"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Изготовлено в промышленной доменной печи."
+			tasks: [{
+				id: "35998FD4169397FC"
+				item: "techreborn:platinum_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["021AE38A81AD9FAC"]
+			icon: "techreborn:iridium_alloy_plate"
+			id: "7667BBB2FDBEE6FD"
+			rewards: [{
+				id: "5E7476CAEB1053F3"
+				type: "xp"
+				xp: 250
+			}]
+   subtitle: "Невероятно мощный сплав, используемый только для самых мощных предметов."
+			tasks: [
+				{
+					id: "6DED9BED3775F9AF"
+					item: "techreborn:iridium_alloy_ingot"
+					type: "item"
+				}
+				{
+					id: "0B908B5351EFC006"
+					item: "techreborn:iridium_alloy_plate"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["74A405518E3CD8F9"]
+			id: "6F8C6808A1DFFAF6"
+			rewards: [
+				{
+					id: "7099324AE0D1605F"
+					item: "techreborn:platinum_dust"
+					type: "item"
+				}
+				{
+					id: "47510D8E617D8D6F"
+					type: "xp"
+					xp: 100
+				}
+			]
+   subtitle: "Вы можете получить платиновую пыль, используя промышленную мельницу для измельчения иридиевой руды, шелдонитовой руды или \\nСердец моря"
+			tasks: [
+				{
+					count: 4L
+					id: "207DA8DE7EC31384"
+					item: "techreborn:platinum_small_dust"
+					type: "item"
+				}
+				{
+					id: "4AB61620ACA37D7C"
+					item: "techreborn:platinum_dust"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["20EEBAECDE001362"]
+			id: "35B27CC7FEF8F5A2"
+			rewards: [{
+				id: "007AC751CDEB1E05"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Так же просто, как сжать слиток."
+			tasks: [{
+				id: "06CACE2DE8C79372"
+				item: "techreborn:titanium_plate"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["18502D23303A1E69"]
+			id: "57706419A89EA464"
+			rewards: [{
+				id: "4E1C47C0C85612C7"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Так же просто, как сжать слиток."
+			tasks: [{
+				id: "07DE61C5409C8499"
+				item: "techreborn:chrome_plate"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["3B94C5DE174F2129"]
+			id: "4F602E2F6FAB89A4"
+			rewards: [{
+				id: "0F249FDA1DFDD4A6"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Эти кристаллы очень подходят для хранения энергии, но не сами по себе, а, возможно, в сочетании с кремнием?"
+			tasks: [{
+				count: 2L
+				id: "7FC5FFEDE19B9B09"
+				item: "techreborn:synthetic_redstone_crystal"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["09E861B40170663A"]
+			id: "165D860455970922"
+			rewards: [{
+				id: "59C10F6F3DA9253C"
+				type: "xp"
+				xp: 50
+			}]
+   subtitle: "Пластинка из кремния служит хорошей основой для многих электронных устройств."
+			tasks: [{
+				id: "02F7A547AD759DF7"
+				item: "techreborn:silicon_plate"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 20.5d
+		}
+		{
+			dependencies: ["1975556CF28F04D1"]
+			id: "57026EAE5D560F4F"
+			tasks: [{
+				id: "4FB683F05FE662F0"
+				item: "techreborn:superconductor"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["74A405518E3CD8F9"]
+			id: "17CA52458876D1A2"
+			rewards: [
+				{
+					id: "679D64F176FE8AC8"
+					item: "techreborn:chrome_dust"
+					type: "item"
+				}
+				{
+					id: "141EEB1DBF1C774D"
+					type: "xp"
+					xp: 250
+				}
+			]
+   subtitle: "Получено путем электролиза из рубиновой пыли или уваровитной пыли"
+			tasks: [{
+				id: "534064218996E258"
+				item: "techreborn:chrome_dust"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["2D78300F936E7A0C"]
+			id: "18502D23303A1E69"
+			rewards: [{
+				id: "09AC3B453C3195FB"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Изготовлено в промышленной доменной печи."
+			tasks: [{
+				id: "70A1F2E53F54E6BC"
+				item: "techreborn:chrome_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 23.0d
+		}
+		{
+			dependencies: ["5158324CF1B1D4B6"]
+			icon: "techreborn:fluid_replicator"
+			id: "450844598EA2B15C"
+			rewards: [
+				{
+					count: 8
+					id: "2CE88053F984353E"
+					item: "techreborn:uu_matter"
+					type: "item"
+				}
+				{
+					id: "6B31E96B29695381"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 1.5d
+   subtitle: "Позволяет создавать жидкости с использованием уу-вещества и энергии."
+			tasks: [
+				{
+					id: "0CE334E96C157044"
+					item: "techreborn:fluid_replicator"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "151464870E891833"
+					item: "techreborn:advanced_machine_casing"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 30.0d
+		}
+		{
+			dependencies: ["2D78300F936E7A0C"]
+			id: "20EEBAECDE001362"
+			rewards: [{
+				id: "75A1FFD14C987E3F"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Изготовлено в промышленной доменной печи."
+			tasks: [{
+				id: "343344D621957055"
+				item: "techreborn:titanium_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 23.0d
+		}
+		{
+			dependencies: ["4E77F0C6FFEC6105"]
+			dependency_requirement: "one_completed"
+			id: "3C7470C5AD12685B"
+			rewards: [
+				{
+					id: "190B40D5363C0971"
+					item: "techreborn:titanium_dust"
+					type: "item"
+				}
+				{
+					id: "0FD2ED29DC948BEE"
+					type: "xp"
+					xp: 250
+				}
+			]
+   subtitle: "Получено путем электролиза бокситовой пыли или промышленного измельчения Сердец Моря."
+			tasks: [
+				{
+					count: 4L
+					id: "0DA297D99037F6EF"
+					item: "techreborn:titanium_small_dust"
+					type: "item"
+				}
+				{
+					id: "0E4CF6F0FC9209F6"
+					item: "techreborn:titanium_dust"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["54636677E54B866A"]
+			id: "09E861B40170663A"
+			rewards: [{
+				id: "7611E87DBC8FCEFB"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Путем электролиза измельченного кремня вы смогли извлечь из него кремний, возможно, это можно использовать для увеличения ваших возможностей по хранению энергии? \\n\\n Чтобы получить кремниевые элементы, вы должны подвергнуть электролизу либо 8 кремниевых частиц, либо 16 песчинок"
+			tasks: [{
+				id: "5CE6032CC87B34F1"
+				item: {
+					Count: 1b
+					id: "techreborn:cell"
+					tag: {
+						fluid: "techreborn:silicon"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: -7.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["4E77F0C6FFEC6105"]
+			id: "47F58263B3BC7423"
+			rewards: [{
+				id: "4AA19910297C408D"
+				type: "xp"
+				xp: 250
+			}]
+   subtitle: "Получено путем электролиза изумрудной пыли или пыли из эндер-мира"
+			tasks: [{
+				id: "0AF35CD2565EEA8F"
+				item: {
+					Count: 1b
+					id: "techreborn:cell"
+					tag: {
+						fluid: "techreborn:beryllium"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 5.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["47F58263B3BC7423"]
+			hide_dependency_lines: true
+			id: "56FAF66CFEE8E937"
+			tasks: [{
+				id: "15A70C1F6B1EC78D"
+				item: "techreborn:iridium_neutron_reflector"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["2D78300F936E7A0C"]
+			id: "2E3FBB60A25E5D78"
+			rewards: [{
+				id: "5165EEB904E8D8CC"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Изготовлено в промышленной доменной печи."
+			tasks: [{
+				id: "05CF67CC863B72AE"
+				item: "techreborn:steel_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 21.0d
+		}
+		{
+			dependencies: [
+				"413301782F770B3C"
+				"05B36051F3720CE6"
+			]
+			id: "0329BD60DC6D06EE"
+			rewards: [{
+				id: "73E410ED47ED5529"
+				type: "xp"
+				xp: 250
+			}]
+			tasks: [{
+				id: "12D7BEBA244E1F33"
+				item: "techreborn:data_storage_chip"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 9.5d
+		}
+		{
+			hide_dependency_lines: true
+			id: "1C8A1CCA830490CB"
+			rewards: [{
+				count: 2
+				id: "27DCBCD49AA5DE6E"
+				item: "techreborn:raw_iridium"
+				type: "item"
+			}]
+   subtitle: "Может быть найдено в верхнем мире между координатами y: -64 и y: 0"
+			tasks: [{
+				icon: "techreborn:iridium_ore"
+				id: "06B0300A6DEE26B1"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "techreborn:iridium_ore"
+							}
+							{
+								Count: 1b
+								id: "techreborn:deepslate_iridium_ore"
+							}
+							{
+								Count: 1b
+								id: "techreborn:raw_iridium"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+   title: "Иридиевая руда"
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["54636677E54B866A"]
+			id: "3205EC70BE4459B5"
+			rewards: [{
+				id: "2DE71BA6FC1F2791"
+				item: "techreborn:iridium_ingot"
+				type: "item"
+			}]
+   subtitle: "Поскольку иридиевая руда встречается очень редко, вы можете центрифугировать немного \\nплатиновой пыли"
+			tasks: [{
+				count: 9L
+				id: "0C94799CDB680ED0"
+				item: "techreborn:iridium_nugget"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["54636677E54B866A"]
+			id: "2F55B192381ACFEA"
+			rewards: [{
+				id: "455CFE7BF5FBD6B0"
+				type: "xp"
+				xp: 50
+			}]
+   subtitle: "Наконец-то у вас есть надежный способ получения никеля. \\n\\nВы можете получить его путем центрифугирования сырой золотой руды, сырой железной руды или сырой медной руды."
+			tasks: [{
+				id: "0F54F493D0225711"
+				item: "techreborn:nickel_nugget"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["54636677E54B866A"]
+			id: "7BCA3069494D846D"
+			rewards: [
+				{
+					id: "09DD04D133D7E69A"
+					item: "techreborn:advanced_circuit"
+					type: "item"
+				}
+				{
+					id: "70E6D44C49EEB274"
+					type: "xp"
+					xp: 25
+				}
+			]
+   subtitle: "Используя ртуть вместо воды в вашей промышленной мельнице, вы можете значительно увеличить ее производительность. \\n\\nПолучено путем центрифугирования красной пыли или киновари"
+			tasks: [{
+				id: "7EB84992550383DB"
+				item: {
+					Count: 1b
+					id: "techreborn:cell"
+					tag: {
+						fluid: "techreborn:mercury"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: -5.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["7B86674432D514BF"]
+			id: "05B36051F3720CE6"
+			rewards: [{
+				id: "54A48134879E23CC"
+				type: "xp"
+				xp: 250
+			}]
+			tasks: [{
+				id: "74DCB6BD9F14606B"
+				item: "techreborn:data_storage_core"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6FDBDD89518BE8CC"]
+			id: "00B093F4B096E8AD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "55E794C08540EC36"
+				type: "random"
+			}]
+   subtitle: "Объединив ловушку для деревьев с дренажной системой, вы сможете полностью автоматизировать сбор сока, просто установив ее рядом с резиновым деревом и позволив ей собирать сок по мере его появления. Она даже будет помещать добытые предметы в инвентарь под ней."
+			tasks: [{
+				id: "4201C27A6E90A694"
+				item: "techreborn:resin_basin"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["12D83CB0796A933C"]
+			id: "1714FE36622421C5"
+			rewards: [{
+				id: "22156D7D3E9DE422"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Разбив свои машины кулаком в 13-й раз, вы понимаете, что должен быть какой-то другой способ. \\n\\nКлюч позволяет мгновенно ломать машины, нажимая Shift + щелкая правой кнопкой мыши, а также позволяет вращать их, просто щелкая правой кнопкой мыши"
+			tasks: [{
+				id: "337C97BACC685BC4"
+				item: "techreborn:wrench"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B606A84A47E6984"]
+			id: "6FDBDD89518BE8CC"
+			rewards: [
+				{
+					id: "30C94AA0135DEE4F"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					id: "4387693E0F246DB8"
+					type: "xp"
+					xp: 25
+				}
+			]
+   subtitle: "С помощью дренажной системы вы можете втягивать в нее любую жидкость, находящуюся над ней, простым примером использования этого может быть создание бесконечного количества воды."
+			tasks: [{
+				id: "444C97DD9E4D08BF"
+				item: "techreborn:drain"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["2E3FBB60A25E5D78"]
+			id: "4EC6EDCA11D03D33"
+			tasks: [{
+				id: "2F8549741E0DE995"
+				item: "techreborn:advanced_machine_casing"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["1693870F4F722022"]
+			hide_dependency_lines: true
+			id: "572DF2570C4C66DB"
+			rewards: [{
+				id: "0C47668538334F9D"
+				type: "xp"
+				xp: 50
+			}]
+   subtitle: "Генерирует 256 кЭ/молнии. Установите сверху железные ограждения, прикрепление более чем одного ограждения увеличит вероятность попадания молнии в стержень."
+			tasks: [{
+				id: "15146E5AA52C1488"
+				item: "techreborn:lightning_rod"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1693870F4F722022"]
+			hide_dependency_lines: true
+			id: "743284A1B75A8DF4"
+			rewards: [{
+				id: "533E6573740B052E"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "diamond"
+   subtitle: "Генерирует 4 Э/т, если на нем есть драконье яйцо."
+			tasks: [{
+				id: "605DE8DE7039EC01"
+				item: "techreborn:dragon_egg_syphon"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4C244A59E076A502"]
+			icon: "techreborn:wrench"
+			id: "75F9505657FC73C7"
+			min_width: 300
+			rewards: [{
+				id: "0CD65CB1DD39DE23"
+				type: "xp"
+				xp: 25
+			}]
+   subtitle: "[\"\",\"Система настройки машин может показаться сложной для некоторых. Но вот краткий обзор для тех, кому это нужно.\",\"\\n\",\"\\n\",\"Чтобы открыть систему настройки, нажмите на гаечный ключ в левой части пользовательского интерфейса в любой машине Tech Reborn, которая ее поддерживает. Затем вы нажимаете на слот, который хотите настроить, и появляется всплывающее окно, в котором показано, как он настроен в данный момент для этой стороны, а затем вы нажимаете на ту сторону, которую хотите настроить, чтобы переключиться между вводом, выводом и отключением. Вы также можете установить флажок для автоматического ввода или вывода, чтобы машина выдвигала/задвигала предметы из инвентаря, расположенного рядом с настроенными сторонами. \",\"\\n\",\"\\n\",\"Если вам нужно что-то в формате видео \",{\"text\":\"Click Here \",\"color\":\"light_purple\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.youtube.com/watch?v=ZPFeYfYnbZ8\"}},\"чтобы посмотреть короткое видео от создателя мода о системе.\"]"
+			tasks: [{
+				id: "7F660A99AE621E58"
+    title: "Объяснение мощности"
+				type: "checkmark"
+			}]
+   title: "Конфигурация машины"
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4C244A59E076A502"]
+			icon: "techreborn:mv_transformer"
+			id: "5A13FA3A0CA0D42E"
+			rewards: [{
+				id: "1F09C044E56D1A97"
+				type: "xp"
+				xp: 25
+			}]
+   subtitle: "В более ранних версиях мода (Minecraft v1.12) машины взрывались, а кабели ломались, если вы использовали слишком высокую мощность для них. Это больше не так, хотя вы по-прежнему будете видеть трансформаторы в rei, они вам не нужны.\\n \\n Трансформаторы TLDR полезны только для ограничения потока энергии."
+			tasks: [{
+				id: "3230525C56067DC2"
+				type: "checkmark"
+			}]
+   title: "Энергетические уровни"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7ADC3916197FD452"]
+			id: "6F3656370E280D7E"
+			rewards: [{
+				id: "50940BB0E3324BD8"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "[ОСТОРОЖНО] При максимальной настройке в воздух взлетит около 250 блоков"
+			tasks: [{
+				id: "46185A68133BECF9"
+				item: "techreborn:launchpad"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["54636677E54B866A"]
+			id: "7ADC3916197FD452"
+			rewards: [{
+				id: "1E8E96C0A2672560"
+				type: "xp"
+				xp: 50
+			}]
+   subtitle: "Путем центрифугирования 8 мраморных крошек вы можете получить небольшое количество магния пыль."
+			tasks: [{
+				id: "280F862450B60870"
+				item: "techreborn:magnesium_dust"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["54636677E54B866A"]
+			id: "51C20BC96894193F"
+			rewards: [{
+				id: "0EB90446B6F1DCA7"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Получен путем электролиза глиняной пыли"
+			tasks: [{
+				id: "5F81C31F20D5C3FF"
+				item: {
+					Count: 1b
+					id: "techreborn:cell"
+					tag: {
+						fluid: "techreborn:lithium"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: -6.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["51C20BC96894193F"]
+			id: "23E8B5EC08A0E818"
+			rewards: [{
+				id: "587A79E9F5F0497A"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Небольшое усовершенствование по сравнению с батареей Red Cell"
+			tasks: [{
+				id: "6A5DDDDDBFA199C9"
+				item: "techreborn:lithium_ion_battery"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["17F560332DD3CF3D"]
+			id: "2CB5CC1C5578F55C"
+			rewards: [{
+				id: "0C7C80ABE27B5F8D"
+				type: "xp"
+				xp: 500
+			}]
+   subtitle: "Батарея, которая позволяет изменять уровень выработки энергии"
+			tasks: [{
+				id: "4EC8F12E4FAE7017"
+				item: "techreborn:adjustable_su"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 25.0d
+		}
+		{
+			dependencies: ["2CB5CC1C5578F55C"]
+			id: "0755F9408C40BEAF"
+			rewards: [
+				{
+					id: "4EAEB06E8D84AFF2"
+					item: "techreborn:interdimensional_su"
+					type: "item"
+				}
+				{
+					id: "599492957C88789F"
+					type: "xp"
+					xp: 250
+				}
+			]
+   subtitle: "Конечный источник энергии - Все межпространственные устройства, которые вы размещаете, используют одно и то же хранилище энергии. \Это означает, что теперь вы можете передавать свою энергию куда угодно без этих надоедливых проводов."
+			tasks: [{
+				id: "1EC10578A151B015"
+				item: "techreborn:interdimensional_su"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 25.5d
+		}
+		{
+			dependencies: ["1ACA7BC9FA7FE69D"]
+			id: "171A4C89C39736B6"
+			rewards: [{
+				count: 2
+				id: "3F035872FD37D72A"
+				item: "techreborn:synthetic_redstone_crystal"
+				type: "item"
+			}]
+   subtitle: "Значительное усовершенствование батарейного блока, позволяющее хранить в 100 раз больше энергии."
+			tasks: [{
+				id: "570F0A8582EBE17D"
+				item: "techreborn:medium_voltage_su"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["171A4C89C39736B6"]
+			id: "3B37983AD8B3CF2E"
+			rewards: [{
+				id: "6AED6A4BB5656CDD"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Интегрируя лапотроны с вашим MFE, вы можете хранить в 10 раз больше энергии в том же объеме."
+			tasks: [{
+				id: "4DA5E0CAEF44963D"
+				item: "techreborn:high_voltage_su"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["17F560332DD3CF3D"]
+			id: "6B52D321A0EF5F16"
+			rewards: [{
+				id: "71947EDEDDC8429A"
+				type: "xp"
+				xp: 500
+			}]
+   subtitle: "Если вам надоело заряжать свои предметы по одному, у меня есть для вас то, что вам нужно, - коврик для зарядки, позволяющий заряжать 6 предметов одновременно."
+			tasks: [{
+				id: "6D62105FFC0F091C"
+				item: "techreborn:charge_o_mat"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 26.0d
+		}
+		{
+			dependencies: ["54636677E54B866A"]
+			id: "027AD844F4FB9141"
+			rewards: [{
+				id: "679717B6EEF25686"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Получено путем центрифугирования \\nпыли из светящегося камня или пыли из камня бесконечности"
+			tasks: [{
+				id: "4A1E3052BA466275"
+				item: {
+					Count: 1b
+					id: "techreborn:cell"
+					tag: {
+						fluid: "techreborn:helium"
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["027AD844F4FB9141"]
+			id: "294215B4FB3EECE0"
+   subtitle: "Центрифугируя 16 ячеек с гелием, вы можете получить гелий^3, который можно использовать в термоядерном реакторе для выработки энергии."
+			tasks: [{
+				id: "25A4B89E70351DEC"
+				item: {
+					Count: 1b
+					id: "techreborn:cell"
+					tag: {
+						fluid: "techreborn:helium3"
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["294215B4FB3EECE0"]
+			id: "36F930BA493C2C11"
+   subtitle: "Консервируя ячейки с гелием, мы получаем ячейки с гелиевым хладагентом, которые могут быть полезны для создания сверхпроводников и повышения скорости."
+			tasks: [{
+				id: "4F7F2D652B05C988"
+				item: "techreborn:helium_coolant_cell_60k"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["0B606A84A47E6984"]
+			id: "27BCA249C899D9D9"
+			rewards: [{
+				id: "2E2112C5B7ECDC53"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Полезно для консервирования всех вещей."
+			tasks: [{
+				id: "08B194682125468C"
+				item: "techreborn:solid_canning_machine"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0B606A84A47E6984"]
+			id: "012565300A42D6AF"
+			rewards: [
+				{
+					id: "481D5660F8E3DAB4"
+					item: "techreborn:red_cell_battery"
+					type: "item"
+				}
+				{
+					id: "03801F4061592D3B"
+					type: "xp"
+					xp: 25
+				}
+			]
+   subtitle: "Эта маленькая штучка может зарядить все предметы в вашем инвентаре"
+			tasks: [{
+				id: "0639682D9D4A3097"
+				item: "techreborn:red_cell_battery"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["012565300A42D6AF"]
+			id: "62CF041CC3936840"
+			rewards: [{
+				id: "37EF23391958E4DB"
+				type: "xp"
+				xp: 50
+			}]
+			size: 1.5d
+   subtitle: "Ваша самая простая форма хранения энергии.\\n\\nИмейте в виду, что точка - это выход, а все остальное - это вход для всех блоков хранения энергии в этой технологии Reborn."
+			tasks: [{
+				id: "008657CBA0FB8DEF"
+				item: "techreborn:low_voltage_su"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["23E8B5EC08A0E818"]
+			id: "08539D3A6DD8CCC4"
+			rewards: [{
+				id: "1BB0A925FFF7DDFF"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Улучшенная версия базовой дрели."
+			tasks: [{
+				id: "0EB012CDC43799A4"
+				item: "techreborn:advanced_drill"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["23E8B5EC08A0E818"]
+			id: "6F294BDDCBE56ADC"
+			rewards: [{
+				id: "7E88CC83CBB70143"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Улучшенная версия базовой бензопилы."
+			tasks: [{
+				id: "4925568E8F7BE505"
+				item: "techreborn:advanced_chainsaw"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["23E8B5EC08A0E818"]
+			id: "3A48F4CC869FF2D2"
+			rewards: [{
+				id: "7D018429EB105030"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+   subtitle: "Улучшенная версия базовой отбойной молотка.\\n\\nShift + щелкните правой кнопкой мыши, чтобы переключиться между режимами."
+			tasks: [{
+				id: "76AB7E201181D97C"
+				item: "techreborn:advanced_jackhammer"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["62CF041CC3936840"]
+			id: "2138553C5281A8D4"
+			rewards: [
+				{
+					count: 3
+					id: "727F65BE59A9B308"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "38BBBE0A9A8036A4"
+					type: "xp"
+					xp: 25
+				}
+			]
+   subtitle: "Электрический инструмент, заменяющий ваши базовые кирки."
+			tasks: [{
+				id: "3F29383093AA2D0B"
+				item: "techreborn:basic_drill"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["62CF041CC3936840"]
+			id: "1A2F3CF0B221FD05"
+			rewards: [
+				{
+					count: 3
+					id: "7F43AB882922E89C"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "3A00B1CD2314425A"
+					type: "xp"
+					xp: 25
+				}
+			]
+   subtitle: "Электрический инструмент, заменяющий ваши базовые топоры."
+			tasks: [{
+				id: "737943C5E3E57F9F"
+				item: "techreborn:basic_chainsaw"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["62CF041CC3936840"]
+			id: "5377541DA4BDA88B"
+			rewards: [
+				{
+					count: 3
+					id: "37911770DB8476BC"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "6E048672CC0043B7"
+					type: "xp"
+					xp: 25
+				}
+			]
+   subtitle: "Инструмент, специально разработанный для добычи каменных блоков. \\n\\nЭто означает, что он не добывает руду. Подходит для прокладывания туннелей или расчистки пространства."
+			tasks: [{
+				id: "38A8E198F2C91E95"
+				item: "techreborn:basic_jackhammer"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"08539D3A6DD8CCC4"
+				"6F294BDDCBE56ADC"
+			]
+			id: "62C3A712591A293B"
+			rewards: [{
+				id: "53B61AE783443EBF"
+				type: "xp"
+				xp: 250
+			}]
+   subtitle: "\"
+			tasks: [{
+				id: "62CB9A8C633A22BA"
+				item: "techreborn:omni_tool"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["62CF041CC3936840"]
+			id: "4AE8F4A153B06D00"
+			rewards: [{
+				count: 4
+				id: "36DA5236403CD13D"
+				item: "techreborn:sap"
+				type: "item"
+			}]
+   subtitle: "После того, как вы слишком часто будете стучать по дереву, возможно, пришло время сделать электрический инструмент, который заменит их."
+			tasks: [{
+				id: "5A4F9B374B9A0AA3"
+				item: "techreborn:electric_treetap"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["62CF041CC3936840"]
+			id: "1F2AC22D367D6FFF"
+			rewards: [{
+				id: "4F03B110EE741B5A"
+				item: "minecraft:diamond_ore"
+				type: "item"
+			}]
+   subtitle: "Инструмент для добычи руды и тому подобного, сохраняя при этом ее форму."
+			tasks: [{
+				id: "3B3E16367B5812BD"
+				item: {
+					Count: 1b
+					id: "techreborn:rock_cutter"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:silk_touch"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6FB5FA2FACF2C776"]
+			id: "511F3C68A35B3376"
+			rewards: [{
+				id: "2336DC04A6A1FB93"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Модернизация усовершенствованной дрели, позволяющая добывать руду в зоне 3х3 при активации."
+			tasks: [{
+				id: "18F910715867129C"
+				item: "techreborn:industrial_drill"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 24.5d
+		}
+		{
+			dependencies: ["6FB5FA2FACF2C776"]
+			id: "550922A9A8A74FE9"
+			rewards: [{
+				id: "13021EB777D29A63"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Модернизация усовершенствованной бензопилы, позволяющая валить целые деревья одним махом."
+			tasks: [{
+				id: "6F5585FDEC1776A9"
+				item: "techreborn:industrial_chainsaw"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 22.5d
+		}
+		{
+			dependencies: ["6FB5FA2FACF2C776"]
+			id: "00B67CACCECF1701"
+			rewards: [{
+				id: "41DBC212B02B6CA7"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Модернизация усовершенствованного отбойного молотка, позволяющая добывать руду в еще большей зоне."
+			tasks: [{
+				id: "2362AABD36C3AA96"
+				item: "techreborn:industrial_jackhammer"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["1975556CF28F04D1"]
+			id: "5C37197479F5BFC1"
+			tasks: [{
+				id: "7478EF4685BA3CE3"
+				item: "techreborn:player_detector"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 28.5d
+		}
+		{
+			dependencies: ["57026EAE5D560F4F"]
+			id: "34E1E575091AA498"
+			rewards: [{
+				id: "6A071CA925EDEED2"
+				item: "techreborn:superconductor_cable"
+				type: "item"
+			}]
+   subtitle: "Идеальный кабель"
+			tasks: [{
+				id: "2E93F9B8361D923E"
+				item: "techreborn:superconductor_cable"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["54636677E54B866A"]
+			icon: {
+				Count: 1b
+				id: "techreborn:cell"
+				tag: {
+					fluid: "techreborn:deuterium"
+				}
+			}
+			id: "0EA4DBE7B695EF01"
+			rewards: [
+				{
+					count: 16
+					id: "64C7182DA50C8F90"
+					item: "techreborn:cell"
+					type: "item"
+				}
+				{
+					id: "5558AC68627F877F"
+					type: "xp"
+					xp: 100
+				}
+			]
+   subtitle: "Получение дейтерия - это трехэтапный процесс.\\n\\n1. Электролиз 5 ячеек с водой \\n2. Центрифугируйте 5 водяных ячеек, чтобы получить 4 водородные ячейки \\n3. Центрифугируйте 4 водородные ячейки, чтобы получить 1 дейтериевую ячейку"
+			tasks: [
+				{
+					id: "1D57F91C9BB9BDD0"
+					item: {
+						Count: 1b
+						id: "techreborn:cell"
+						tag: {
+							fluid: "techreborn:electrolyzed_water"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3DACC8581655E639"
+					item: {
+						Count: 1b
+						id: "techreborn:cell"
+						tag: {
+							fluid: "indrev:hydrogen_still"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0473DB90779BB954"
+					item: {
+						Count: 1b
+						id: "techreborn:cell"
+						tag: {
+							fluid: "techreborn:deuterium"
+						}
+					}
+					type: "item"
+				}
+			]
+   title: "Дейтериевая ячейка"
+			x: -11.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["0EA4DBE7B695EF01"]
+			id: "4D85BA63BD54984A"
+			rewards: [{
+				id: "261E9C91CC2C52A5"
+				type: "xp"
+				xp: 100
+			}]
+   subtitle: "Тритий получается путем простого центрифугирования 4 дейтериевых ячеек"
+			tasks: [{
+				id: "45796A556B155191"
+				item: {
+					Count: 1b
+					id: "techreborn:cell"
+					tag: {
+						fluid: "techreborn:tritium"
+					}
+				}
+				type: "item"
+			}]
+			x: -12.0d
+			y: 18.0d
+		}
+		{
+			id: "458F77D5647A05A9"
+   subtitle: "[\"\",\"Можно найти в \",{\"text\":\"The End\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"45D9C9CD7B2568A0\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[]}},\".\"]"
+			tasks: [{
+				id: "1B7DF5ACF6C0B3CE"
+				item: "techreborn:sheldonite_ore"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+	]
+ title: "Возрождение технологий"
+}

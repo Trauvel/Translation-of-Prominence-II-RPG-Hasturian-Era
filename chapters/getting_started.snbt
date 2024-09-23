@@ -1,0 +1,386 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "getting_started"
+	group: ""
+	icon: "minecraft:grass_block"
+	id: "7539C31213D86E55"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "prominent:textures/text/the_basics.png"
+			rotation: 0.0d
+			width: 2.504166666666667d
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "prominent:textures/text/storage.png"
+			rotation: 0.0d
+			width: 2.504166666666667d
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.0d
+			hover: [ ]
+			image: "prominent:textures/other/prominent_logo.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 2.0d
+			hover: [ ]
+			image: "prominent:textures/text/welcome.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			click: ""
+			color: 11250603
+			corner: false
+			dev: false
+			height: 7.311518324607329d
+			hover: [ ]
+			image: "prominent:textures/text/prominence-desc.png"
+			rotation: 0.0d
+			width: 10.5d
+			x: 0.048660714285709616d
+			y: -7.030260533532783d
+		}
+	]
+	order_index: 0
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "minecraft:grass_block"
+			id: "1DD302BB650057E3"
+			shape: "rsquare"
+			size: 1.25d
+   subtitle: "Начните свое путешествие в Провиденсе!"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "minecraft:grass_block"
+				id: "7B701D980200A661"
+    title: "Войдите в Верхний мир"
+				type: "dimension"
+			}]
+   title: "Первые шаги"
+			x: 0.0d
+			y: -0.625d
+		}
+		{
+			dependencies: ["1DD302BB650057E3"]
+			description: [
+				"Книга заданий очень важна в игре Prominence, и она поможет вам пройти большую часть игрового процесса."
+				""
+				"Чтобы легко получить доступ к книге заданий, вы можете нажать на значок книги заданий в левом верхнем углу вашего инвентаря."
+				""
+				"Когда вы открываете задание, в левой части экрана отображается, какие задачи вам нужно выполнить, чтобы завершить задание, а в правой части экрана отображается, какие награды вы получите."
+			]
+			id: "6E9F5146EA3F505F"
+			rewards: [{
+				id: "78B218622FE5FA2B"
+				type: "xp"
+				xp: 2
+			}]
+   subtitle: "Нажмите на меня и прочтите мое описание!"
+			tasks: [{
+				id: "4184344EFBA63388"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "c:crops"
+					}
+				}
+    title: "Найдите фрукт или овощ!"
+				type: "item"
+			}]
+   title: "Первые шаги: прохождение квестов!"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2BE6B7EC6F6CC58B"]
+			id: "52C0EB35542648C6"
+			rewards: [{
+				id: "3685CADB8B28BF24"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			shape: "rsquare"
+   subtitle: "Добудьте немного меди и используйте улучшение пустого сундука, чтобы сделать медный сундук для ваших сундуков!"
+			tasks: [{
+				id: "1C2CEDE48DF1D506"
+				item: "ironchests:copper_chest_upgrade"
+				type: "item"
+			}]
+   title: "Улучшение: сундуки"
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6E9F5146EA3F505F"]
+			icon: "minecraft:filled_map"
+			id: "33961F7EE650AA60"
+			rewards: [{
+				id: "10944260335D83B1"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "diamond"
+   subtitle: "Чтобы открыть экран глав квестов, закройте это задание и переместите курсор влево. В каждой главе есть свой набор заданий, соответствующих этой теме."
+			tasks: [{
+				id: "6E754EF86972872E"
+    title: "Нажмите сюда!"
+				type: "checkmark"
+			}]
+   title: "Первые шаги: главы"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["33961F7EE650AA60"]
+			id: "2BE6B7EC6F6CC58B"
+			rewards: [
+				{
+					id: "578E739C5F5BB9AC"
+					item: "ironchests:blank_chest_upgrade"
+					type: "item"
+				}
+				{
+					id: "4FA5E60B4E68FDBF"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "55DC8F156573C515"
+					item: "travelersbackpack:backpack_tank"
+					type: "item"
+				}
+			]
+   subtitle: "Создайте сундук - его можно улучшить с помощью мода Iron Chests!"
+			tasks: [{
+				id: "17209749B99F5873"
+				item: "minecraft:chest"
+				type: "item"
+			}]
+   title: "Первые шаги: создание сундука"
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2BE6B7EC6F6CC58B"]
+			description: [
+				"Чтобы надеть рюкзак, нажмите на значок экипировки в меню рюкзака."
+				""
+				"После того, как рюкзак будет надет, вы сможете открыть его, нажав на клавишу B"
+				""
+				"Рюкзаки можно улучшать, проходя несколько уровней. Рюкзаки со специальными преимуществами можно найти в сундуках с добычей."
+				""
+				"Чтобы увидеть все варианты рюкзаков, введите @traveler в строку поиска REI."
+				""
+				"Вы можете найти эту строку поиска в нижней части вашего инвентаря."
+				""
+				"При нажатии на предметы в списке справа от вашего инвентаря будут отображаться их рецепты и способы применения."
+				""
+				"Вы также можете нажать R и U, наведя курсор на любой предмет, чтобы увидеть его рецепт и способы применения"
+			]
+			hide_dependency_lines: true
+			id: "702ED6D1B159048D"
+			rewards: [{
+				id: "1510D8B226901BAD"
+				item: "travelersbackpack:blank_upgrade"
+				type: "item"
+			}]
+			shape: "rsquare"
+   subtitle: "Нажмите на меня и прочтите мое описание!"
+			tasks: [{
+				id: "524D333C37CC1E78"
+				item: {
+					Count: 1b
+					id: "travelersbackpack:standard"
+					tag: { }
+				}
+				type: "item"
+			}]
+   title: "Улучшение: инвентарь"
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["33961F7EE650AA60"]
+			description: [
+				"Нажмите [M], чтобы открыть карту мира."
+				""
+				"Чтобы получить доступ к фрагменту, вам просто нужно щелкнуть правой кнопкой мыши по фрагменту и выбрать \"Получить доступ к выбранному фрагменту.\""
+				""
+				"На некоторых серверах ограничения доступа могут быть ниже, чем обычно. Помните об этом ограничении, чтобы не исчерпать его."
+			]
+			icon: "supplementaries:slice_map"
+			id: "723951CD2A49AEB7"
+			rewards: [{
+				id: "130FE58DD2BBD7D8"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+   subtitle: "Нажмите на меня и прочтите описание!"
+			tasks: [{
+				id: "1BC73062E2DC9CB8"
+    title: "Нажмите, чтобы продолжить!"
+				type: "checkmark"
+			}]
+   title: "Многопользовательский режим: получение"
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["002FC90E5914D9C2"]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "prominent:textures/other/skellak.png"
+				}
+			}
+			id: "2F5A3E304ABAADF6"
+			rewards: [{
+				id: "2CBB2CDF05805373"
+				item: "prominent_ost:music_disc_iv"
+				type: "item"
+			}]
+			size: 1.5d
+   subtitle: "Продолжайте свое путешествие по другим главам!"
+			tasks: [{
+				id: "721111D6BBD02194"
+    title: "Нажмите здесь, чтобы продолжить!"
+				type: "checkmark"
+			}]
+   title: "Добро пожаловать в Провиденс!"
+			x: 4.017857142857146d
+			y: -1.9885938668661183d
+		}
+		{
+			dependencies: ["33961F7EE650AA60"]
+			id: "002FC90E5914D9C2"
+			rewards: [{
+				id: "09883A3C64098DAA"
+				item: "fwaystones:waystone_scroll"
+				type: "item"
+			}]
+   subtitle: "Самый простой способ телепортироваться между локациями — использовать путевые камни. Путевые камни естественным образом появляются в деревнях, а также их можно создать самостоятельно."
+			tasks: [{
+				icon: "fwaystones:waystone"
+				id: "70CE3441ADA82DBA"
+				observe_type: 0
+				timer: 0L
+    title: "Используйте путевой камень!"
+				to_observe: "fwaystones:waystone"
+				type: "observation"
+			}]
+   title: "Основы: телепортация"
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["33961F7EE650AA60"]
+			description: [
+				"Древо талантов, наряду с повышением уровня, является наиболее важным способом развития персонажа в игре Prominence, так как с его помощью вы можете повысить свои характеристики и разблокировать новые способности."
+				""
+				"Это напрямую связано с повышением уровня, так как вы будете получать очки талантов каждые 2 уровня."
+				""
+				"Вы можете открыть его, нажав N, чтобы сбросить настройки, вы можете использовать свиток знаний. Этот предмет будет использован при применении, и ваши очки талантов будут возвращены."
+			]
+			icon: "prominent:knowledge_scroll"
+			id: "6F99CB89833D7AA2"
+			rewards: [{
+				id: "19F81DCB4196EE34"
+				item: "prominent:knowledge_scroll"
+				type: "item"
+			}]
+			shape: "diamond"
+   subtitle: "Нажмите на меня и прочтите описание!"
+			tasks: [{
+				id: "31F7356F773E8E8E"
+    title: "Нажмите здесь, чтобы продолжить"
+				type: "checkmark"
+			}]
+   title: "Развитие: дерево талантов"
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["33961F7EE650AA60"]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tiered:textures/gui/anvil_tab_icon.png"
+				}
+			}
+			id: "58AD6DBD81B67C1C"
+			rewards: [{
+				count: 4
+				id: "4EB0CB7EF7E56D4D"
+				item: "tiered:limestone_chunk"
+				type: "item"
+			}]
+   subtitle: "Все инструменты будут иметь случайную редкость. Это повлияет на их характеристики. Чтобы повысить редкость, вы можете перековать инструменты, используя вторую вкладку в наковальне. Чтобы успешно изменить редкость предмета, вам понадобится специальный материал и одна из трех руд. Вы можете ознакомиться с квестом"
+			tasks: [{
+				id: "2AC258EF05B19E8F"
+				item: "minecraft:anvil"
+    title: "Получите наковальню"
+				type: "item"
+			}]
+   title: "Основы: редкость и перековка"
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["33961F7EE650AA60"]
+			description: [
+				""
+				"Основным аспектом развития вашего персонажа является повышение уровня, отображаемое в левом верхнем углу вашего инвентаря."
+				""
+				"Он повышается с помощью боевого опыта, например, в сражениях с врагами или при победе над боссами. Это позволяет масштабировать врагов до вашего уровня и служит в качестве требования для прохождения определенных боссов."
+				""
+				"Для некоторых сражений с боссами необходимо быть на их уровне! В описании квеста босса будет указан рекомендуемый уровень, если он есть."
+			]
+			icon: "minecraft:writable_book"
+			id: "72EE0A2E9D410B2C"
+			shape: "diamond"
+   subtitle: "Нажмите на меня и прочтите описание!"
+			tasks: [{
+				id: "7E40E783D7E377CB"
+    title: "Нажмите здесь, чтобы продолжить"
+				type: "checkmark"
+			}]
+   title: "Прогресс: повышение уровня"
+			x: -1.0d
+			y: -5.0d
+		}
+	]
+ title: "Начало"
+}

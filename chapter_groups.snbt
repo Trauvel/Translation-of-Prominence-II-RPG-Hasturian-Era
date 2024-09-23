@@ -1,0 +1,9 @@
+{
+	chapter_groups: [
+		{ id: "3DBADFFDA1FDAD84", title: "Кампания" }
+		{ id: "3E586F2160161EEA", title: "Королевства" }
+		{ id: "555B69C1AF8C1C7F", title: "Сражение \\& Снаряжение" }
+		{ id: "244F516C4853FD2F", title: "Магия" }
+		{ id: "49D52BD6447C5CC0", title: "Технологии" }
+	]
+}

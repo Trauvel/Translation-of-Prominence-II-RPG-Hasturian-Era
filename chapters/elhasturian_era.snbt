@@ -1,0 +1,67 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "elhasturian_era"
+	group: "3DBADFFDA1FDAD84"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "eldritch_end:textures/mob_effect/hastur_presence.png"
+		}
+	}
+	id: "38345D0552E8A4AF"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Пройдите все главы «Вторжения пустоты», чтобы разблокировать сюжетную линию этого дополнения."
+				""
+				"&8English"
+				""
+				"{@pagebreak}"
+				"&cTermina todos los capitulos de Void's Invasion para desbloquear la campaña de esta expansión."
+				""
+				"&8Español"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "eldritch_end:textures/mob_effect/hastur_presence.png"
+				}
+			}
+			id: "73DA5990952CEA35"
+			shape: "diamond"
+			tasks: [{
+				advancement: "prominent:end_of_voids_invasion"
+				criterion: ""
+				id: "190537CB8ABEDC05"
+    title: "Завершите кампанию по вторжению в Пустоту"
+				type: "advancement"
+			}]
+   title: "Эра Хастурианцев"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["73DA5990952CEA35"]
+			hide: true
+			id: "579138B8DB19724C"
+			shape: "diamond"
+			size: 1.25d
+   subtitle: "[Нажмите, чтобы ознакомиться с историей]"
+			tasks: [{
+				icon: "ftbquests:book"
+				id: "139B22FF55486BD7"
+    title: "Доступно в версии 3.0.5, выйдет в конце этого месяца."
+				type: "custom"
+			}]
+   title: "Глава I: Тень за горизонтом"
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+ title: "Эра Хастурианцев"
+}
