@@ -1,3 +1,7 @@
+# Ссылки на нормальные переводы
+- [Перевод сборки](https://disk.yandex.ru/d/9jEKWsiSflI7sg)
+- [Либо](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbGd0OGZFVURpMXJCSFdaOVV1QmJYeXFvUFRoZ3xBQ3Jtc0trdnRES1R3VVdUamJoRTltTnhTRHZFYnhUTTFHZTg1Qk53ZjhiVVFPa05MRy1pbmVmMndiRnBZeVlZbUFXeFlVc2VoVVI5QUpjLTlXdlRjYkdBeFVhaEN5NTRMQzlOeHgyekFUdGNHUTdGeFhOZERGRQ&q=https%3A%2F%2Fkappa.lol%2FqY2XQ&v=B8Po6CBmGWg)
+
 # Перевод Questbook от FTB для Minecraft сборки Prominence II RPG: Hasturian Era
 
 Этот проект представляет собой перевод **Questbook** от команды FTB на русский язык для сборки **Prominence II RPG: Hasturian Era** (версия 3.0.2) на Minecraft 1.20.1.
